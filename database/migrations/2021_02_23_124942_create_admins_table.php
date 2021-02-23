@@ -20,6 +20,7 @@ class CreateAdminsTable extends Migration
                 Admin::TYPE_ADMIN,
                 Admin::TYPE_SUPER_ADMIN,
             ]);
+            $table->string('remember_token', 100)->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

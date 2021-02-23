@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ar">
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +33,8 @@
 										<div class="input-group mb-3">
 											<span class="input-group-text bg-transparent"><i class="ti-user"></i></span>
 											<input type="text" name="name" class="form-control ps-15 bg-transparent"
-												placeholder="{{__('custom-attributes.admin.name')}}">
+												placeholder="{{__('custom-attributes.admin.name')}}"
+												value="{{old('name')}}">
 										</div>
 										@error('name')
 										<div class="help-block">
@@ -50,7 +50,8 @@
 													class="ti-lock"></i></span>
 											<input type="password" name="password"
 												class="form-control ps-15 bg-transparent"
-												placeholder="{{__('custom-attributes.admin.password')}}">
+												placeholder="{{__('custom-attributes.admin.password')}}"
+												value="{{old('password')}}">
 										</div>
 										@error('password')
 										<div class="help-block">

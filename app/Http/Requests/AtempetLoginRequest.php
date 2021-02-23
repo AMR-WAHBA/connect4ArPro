@@ -7,7 +7,7 @@ class AtempetLoginRequest extends FormRequest
     protected function prepareForValidation()
     {
         $this->merge([
-            'remmber_me' => $this->get('remmber_me')? true : false ,
+            'remmber_me' => $this->get('remmber_me')? 1 : 0 ,
         ]);
     }
     public function rules()
