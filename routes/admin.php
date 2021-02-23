@@ -6,10 +6,14 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('login',[LoginController::class,'viewLoginPage'])->name('admin.login');
+Route::post('login',[LoginController::class,'attemptLogin'])->name('admin.attempt_login');
+Route::get('logout',[LoginController::class,'logout']);
 
-Route::prefix('admin')->middleware('auth:admin')->group(function () {
-    Route::resource('/', AdminController::class);
+Route::middleware('auth:admin')->group(function () {
+    Route::resource('admin', AdminController::class);
 });
 
 // if route not defined in the system;
-Route::fallback([LoginController::class,'viewLoginPage']);
+Route::fallback([LoginController::class,'routeInvalidProccess']);
+
+

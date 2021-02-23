@@ -22,7 +22,10 @@ class AdminFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name,
+            'fullname' => $this->faker->name,
+            'password' => bcrypt(123456),
+            'type' => 'manager' ,
         ];
     }
 }
