@@ -9,6 +9,6 @@ class LoginController extends Controller
 {
     public function viewLoginPage()
     {
-       return view('backend.auth.login');
+        return view('backend.auth.login');
     }
 }
