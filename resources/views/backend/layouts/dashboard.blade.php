@@ -7,10 +7,10 @@
     <link rel="icon" href="{{asset('images/favicon.ico')}}">
     <title>Connect4 Arab Pro</title>
     <!-- Vendors Style-->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/vendors_css.css')}}">
+    <link  type="text/css" href="{{asset('/css/vendors_css.css')}}">
     <!-- Style-->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/skin_color.css')}}">
+    <link  type="text/css" href="{{asset('/css/style.css')}}">
+    <link  type="text/css" href="{{asset('/css/skin_color.css')}}">
 </head>
 
 <body class="hold-transition dark-skin sidebar-mini theme-warning fixed rtl">
