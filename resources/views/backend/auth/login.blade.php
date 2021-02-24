@@ -104,8 +104,8 @@
 		</div>
 	</div>
 	<!-- Vendor JS -->
-	<script src="{{asset('js/vendors.min.js')}}"></script>
-	<script src="{{asset('assets/icons/feather-icons/feather.min.js')}}"></script>
+	<script src="{{asset('/public/js/vendors.min.js')}}"></script>
+	<script src="{{asset('/public/assets/icons/feather-icons/feather.min.js')}}"></script>
 </body>
 
 </html>
