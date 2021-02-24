@@ -9,10 +9,10 @@
 	<link rel="icon" href="{{asset('images/favicon.ico')}}">
 	<title>@lang('website.title')</title>
 	<!-- Vendors Style-->
-	<link type="text/css" href="{{asset('/css/vendors_css.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('/public/css/vendors_css.css')}}">
 	<!-- Style-->
-	<link type="text/css"  href="{{asset('/css/style.css')}}">
-	<link type="text/css"  href="{{asset('/css/skin_color.css')}}">
+	<link rel="stylesheet" type="text/css"  href="{{asset('/public/css/style.css')}}">
+	<link rel="stylesheet" type="text/css"  href="{{asset('/public/css/skin_color.css')}}">
 </head>
 <body class="hold-transition theme-primary bg-img rtl" style="background-image: url(images/auth-bg/bg-9.jpg)">
 	<div class="container h-p100">
