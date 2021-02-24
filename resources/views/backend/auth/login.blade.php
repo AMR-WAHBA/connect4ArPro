@@ -9,10 +9,10 @@
 	<link rel="icon" href="{{asset('images/favicon.ico')}}">
 	<title>@lang('website.title')</title>
 	<!-- Vendors Style-->
-	<link rel="stylesheet" type="text/css" href="{{asset('/public/css/vendors_css.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('/css/vendors_css.css')}}">
 	<!-- Style-->
-	<link rel="stylesheet" type="text/css"  href="{{asset('/public/css/style.css')}}">
-	<link rel="stylesheet" type="text/css"  href="{{asset('/public/css/skin_color.css')}}">
+	<link rel="stylesheet" type="text/css"  href="{{asset('/css/style.css')}}">
+	<link rel="stylesheet" type="text/css"  href="{{asset('/css/skin_color.css')}}">
 </head>
 <body class="hold-transition theme-primary bg-img rtl" style="background-image: url(images/auth-bg/bg-9.jpg)">
 	<div class="container h-p100">
@@ -104,8 +104,8 @@
 		</div>
 	</div>
 	<!-- Vendor JS -->
-	<script src="{{asset('/public/js/vendors.min.js')}}"></script>
-	<script src="{{asset('/public/assets/icons/feather-icons/feather.min.js')}}"></script>
+	<script src="{{asset('/js/vendors.min.js')}}"></script>
+	<script src="{{asset('/assets/icons/feather-icons/feather.min.js')}}"></script>
 </body>
 
 </html>
