@@ -26,12 +26,12 @@ class LoginController extends Controller
         try {
             $validatedData = $request->validated();
             $admin = Admin::where('name', $validatedData['name'])->first([
-                'id','name','password'
+                'id','name','password','type'
             ]);
             if ($admin) {
                 if (Hash::check($validatedData['password'], $admin->password)) {
                     auth('admin')->login($admin, $validatedData['remmber_me']);
-                    return redirect()->route('admin.index');
+                    return $admin->redirectIfAuthintecatedToDashboard();
                 } else {
                     $errors['password'] = trans('auth.password');
                     $this->passwordError = true;
